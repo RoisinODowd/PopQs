@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
 
+
         });
 
     //}
@@ -59,10 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
             });
 
+          Intent e = new Intent(getApplicationContext(), BubbleActivity.class);
+          startActivity(e);
         }
 
-
-            //Initializes controls
+    //Initializes controls
 
         //editQuestion=(EditText)findViewById(R.id.editQuestion);
         //editAnswer=(EditText)findViewById(R.id.editAnswer);
