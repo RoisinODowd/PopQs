@@ -6,63 +6,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button b1 = (Button) findViewById(R.id.button);
+        Button b2 = (Button) findViewById(R.id.button2);
 
-        //Button mClickButton1 = (Button)findViewById(R.id.button);
-        //mClickButton1.setOnClickListener(this);
-        //Button mClickButton2 = (Button)findViewById(R.id.button2);
-        //mClickButton2.setOnClickListener(this);
+        b1.setOnClickListener(new View.OnClickListener() {
 
-
-        Button send = (Button) findViewById(R.id.button);
-        send.setOnClickListener(new View.OnClickListener() {
-
-            @Override
             public void onClick(View v) {
-
-                //public void onClick (View v){
-
-                //startActivity(new Intent("com.tobidae.Activity1"));
-
-                Intent i = new Intent(getApplicationContext(), AddQsActivity.class);
-                startActivity(i);
+                Intent myintent1 = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(myintent1);
             }
-
         });
 
-    //}
+        b2.setOnClickListener(new View.OnClickListener() {
 
-   // @Override
-   // protected void onCreate(Bundle savedInstanceState) {
-    //    super.onCreate(savedInstanceState);
-     //   setContentView(R.layout.activity_main);
-
-
-       final Button button = (Button) findViewById(R.id.button2);
-            button.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-
-                    //public void onClick (View v){
-
-                        //startActivity(new Intent("com.tobidae.Activity1"));
-
-                    Intent i = new Intent(getApplicationContext(), Main2Activity.class);
-                    startActivity(i);
-                }
-
-            });
-
-        }
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(myintent2);
+            }
+        });
+    }
+}
 
 
-            //Initializes controls
+            //Initializes controls for DB
 
         //editQuestion=(EditText)findViewById(R.id.editQuestion);
         //editAnswer=(EditText)findViewById(R.id.editAnswer);
@@ -110,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         //{
         //    showMessage("Error", "No records found");
         //    return;
-    }
+
         //StringBuffer buffer=new StringBuffer();
         //while(c.moveToNext())
         //{

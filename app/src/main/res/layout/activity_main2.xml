@@ -14,17 +14,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Please select the picture for &quot;apple&quot;."
+        android:text="Please select the picture for &quot;苹果&quot;"
         android:id="@+id/textView2"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
         android:id="@+id/radioButton4"
+        android:background="@drawable/lemon"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp" />
@@ -32,28 +32,31 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
         android:id="@+id/radioButton5"
-        android:layout_below="@+id/radioButton4"
-        android:layout_alignStart="@+id/radioButton4"
-        android:layout_marginTop="32dp" />
+        android:checked="false"
+        android:background="@drawable/watermelon"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/radioButton7"
+        android:layout_centerHorizontal="true" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/radioButton6"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/radioButton5" />
+        android id="@+id/radioButton6"
+        android:background="@drawable/apple"
+        android:id="@+id/radioButton7"
+        android:layout_alignStart="@+id/radioButton5"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="36dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Previous Q"
         android:id="@+id/button3"
-        android:layout_marginTop="63dp"
-        android:layout_below="@+id/radioButton6"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/button9"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -79,4 +82,5 @@
         android:id="@+id/button10"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/button4" />
+
 </RelativeLayout>

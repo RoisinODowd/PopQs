@@ -60,4 +60,16 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="chinese_characters">苹果
+了  在  要
+猫  狗  鸡
+猴  羊  龙
+四
+北京  上海  广州
+饺子  包子  筷子
+新年快乐
+黄色  白色  红色
+蓝色  黑色  绿色</string>
+    <string name="title_activity_qmaps">Map</string>
 </resources>
