@@ -51,7 +51,8 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:checked="false" />
+        android:checked="false"
+        android:textSize="20dp" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -61,7 +62,8 @@
         android:layout_marginTop="33dp"
         android:checked="false"
         android:layout_below="@+id/radioButton"
-        android:layout_alignStart="@+id/radioButton" />
+        android:layout_alignStart="@+id/radioButton"
+        android:textSize="20dp" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -71,6 +73,7 @@
         android:layout_marginTop="35dp"
         android:checked="false"
         android:layout_below="@+id/radioButton2"
-        android:layout_alignStart="@+id/radioButton2" />
+        android:layout_alignStart="@+id/radioButton2"
+        android:textSize="20dp" />
 
 </RelativeLayout>

@@ -25,8 +25,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/radioButton4"
         android:background="@drawable/lemon"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioButton5"
+        android:layout_alignStart="@+id/radioButton5"
         android:layout_marginTop="36dp" />
 
     <RadioButton
@@ -35,17 +35,17 @@
         android:id="@+id/radioButton5"
         android:checked="false"
         android:background="@drawable/watermelon"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/radioButton7"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/radioButton6"
+        android:layout_marginTop="20dp" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radioButton6"
         android:background="@drawable/apple"
-        android:layout_alignStart="@+id/radioButton5"
-        android:layout_centerInParent="true"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp" />
 
     <Button
@@ -81,5 +81,32 @@
         android:id="@+id/button10"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/button4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/radioButton5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/radioButton4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You got it!"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/radioButton6"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

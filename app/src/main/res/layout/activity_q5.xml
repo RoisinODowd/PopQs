@@ -69,4 +69,31 @@
         android:id="@+id/button19"
         android:layout_alignBottom="@+id/button18"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You got it!"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/radioButton17"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/radioButton18"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/radioButton19"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

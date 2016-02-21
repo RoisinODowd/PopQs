@@ -71,4 +71,31 @@
         android:id="@+id/button21"
         android:layout_alignBottom="@+id/button20"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/radioButton21"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try again!"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/radioButton22"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You got it!"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/radioButton20"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -79,7 +79,8 @@
         android:text="Try again!"
         android:id="@+id/textView17"
         android:layout_below="@+id/radioButton8"
-        android:layout_alignEnd="@+id/textView18" />
+        android:layout_alignEnd="@+id/textView18"
+        android:visibility="invisible"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,7 +89,8 @@
         android:text="You got it!"
         android:id="@+id/textView18"
         android:layout_below="@+id/radioButton9"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
 
     <TextView
         android:layout_width="wrap_content"
