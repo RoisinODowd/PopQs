@@ -70,7 +70,7 @@ public class q7Activity extends AppCompatActivity {
         b23.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent2 = new Intent(q7Activity.this, MainActivity.class);
+                Intent myintent2 = new Intent(q7Activity.this, q1Activity.class);
                 startActivity(myintent2);
             }
         });
