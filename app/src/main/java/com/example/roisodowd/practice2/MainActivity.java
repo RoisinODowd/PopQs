@@ -5,53 +5,36 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button b1 = (Button) findViewById(R.id.button);
+        Button b2 = (Button) findViewById(R.id.button2);
+        RadioButton r1 = (RadioButton) findViewById(R.id.radioButton);
+        RadioButton r2 = (RadioButton) findViewById(R.id.radioButton2);
+        RadioButton r3 = (RadioButton) findViewById(R.id.radioButton3);
 
-        //Button mClickButton1 = (Button)findViewById(R.id.button);
-        //mClickButton1.setOnClickListener(this);
-        //Button mClickButton2 = (Button)findViewById(R.id.button2);
-        //mClickButton2.setOnClickListener(this);
+        b1.setOnClickListener(new View.OnClickListener() {
 
-
-        Button send = (Button) findViewById(R.id.button);
-        send.setOnClickListener(new View.OnClickListener() {
-
-            @Override
             public void onClick(View v) {
-
-                //public void onClick (View v){
-
-                //startActivity(new Intent("com.tobidae.Activity1"));
-
-                Intent i = new Intent(getApplicationContext(), AddQsActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(MainActivity.this, AddQsActivity.class);
+                startActivity(intent);
             }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
         });
 
-    //}
+        b2.setOnClickListener(new View.OnClickListener() {
 
-   // @Override
-   // protected void onCreate(Bundle savedInstanceState) {
-    //    super.onCreate(savedInstanceState);
-     //   setContentView(R.layout.activity_main);
-
-
-       final Button button = (Button) findViewById(R.id.button2);
-            button.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-
-                    //public void onClick (View v){
-
+<<<<<<< HEAD
                         //startActivity(new Intent("com.tobidae.Activity1"));
 
                     Intent i = new Intent(getApplicationContext(), Main2Activity.class);
@@ -88,86 +71,42 @@ public class MainActivity extends AppCompatActivity {
 
         //db=openOrCreateDatabase("QuizDB", Context.MODE_PRIVATE, null);
         //db.execSQL("CREATE TABLE IF NOT EXISTS quiz(question VARCHAR,answer VARCHAR);");
+=======
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> master
 
-        // Inserts a record in the table
+        r1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, q6Activity.class);
+                startActivity(intent);
 
-        //db.execSQL("INSERT INTO student VALUES('"+editQuestion.getText()+"','"+editAnswer.getText()+"');");
+            }
+        });
 
-        // Updates record of selected question
+        r2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, q4Activity.class);
+                startActivity(intent);
 
-        //db.execSQL("UPDATE student SET answer='"+editAnswer.getText()+"'WHERE question='"+editQuestion.getText()+"');");
+            }
+        });
 
-        // View one record
+        r3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, q2Activity.class);
+                startActivity(intent);
 
-        //Cursor c=db.rawQuery("SELECT * FROM quiz WHERE question='"+editQuestion.getText()+"'", null);
-        //if(c.movetoFirst())
-        //{
-        //    editAnswer.setText(c.getString(1));
-        //}
+            }
+        });
 
-        // View all records
 
-        //Cursor c=db.rawQuery("SELECT * FROM quiz", null);
-        //if(c.getCount()==0)
-        //{
-        //    showMessage("Error", "No records found");
-        //    return;
     }
-        //StringBuffer buffer=new StringBuffer();
-        //while(c.moveToNext())
-        //{
-        //    buffer.append("Question: "+c.getString(0)+"\n");
-        //    buffer.append("Answer: "+c.getString(1)+"\n");
-        //}
-        //showMessage("Quiz Details", buffer.toString());
+}
 
-
-
-
-    // Interfaces with radio buttons
-
-   // @Override
-    //public void onRadioButtonClicked(View view) {
-
-        // Sees if the button was checked
-
-//        boolean checked = ((RadioButton) view).isChecked();
-
-        // Sees which button was checked
-
-  //      switch(view.getId()) {
-    //        case R.id.radio_app_name:
-      //          if (checked)
-                    // Do something
-       //         break;
-         //   case R.id.radio_action_settings:
-           //     if (checked)
-             //       // Do something
-               // break;
-        //}
-    //}
-
-
-
-    //@Override
-    //public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu_main, menu);
-      //  return true;
-    //}
-
-    //@Override
-  //  public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-    //    if (id == R.id.action_settings) {
-   //         return true;
-   //     }
-
-  //      return super.onOptionsItemSelected(item);
-   // }
-//}

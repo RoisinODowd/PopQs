@@ -23,29 +23,13 @@
 
     <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+
+    <RadioButton android:id="@+id/radio_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:textSize="20dp"
+        android:text="@string/app_name"
+        android:onClick="onRadioButtonClicked" />
 
-
-    // Adds radio buttons which will connect to QuizDB
-    // The strings are incorrect but the layout should work
-    // Needs to be a subgroup of LinearLayout
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_app_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:onClick="onRadioButtonClicked"/>
-
-    </RadioGroup>
 
 </android.support.design.widget.CoordinatorLayout>

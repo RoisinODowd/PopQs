@@ -45,13 +45,22 @@ public class QuestionBubble extends Service {
 
         windowManager.addView(chatHead, params);
 
+        /*chatHead.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(e);
+            }
+        });*/
+
         chatHead.setOnTouchListener(new View.OnTouchListener() {
             private int initialX;
             private int initialY;
             private float initialTouchX;
             private float initialTouchY;
 
-            @Override public boolean onTouch(View v, MotionEvent event) {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         initialX = params.x;
