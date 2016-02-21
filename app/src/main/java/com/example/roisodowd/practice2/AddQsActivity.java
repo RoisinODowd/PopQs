@@ -10,7 +10,7 @@ public class AddQsActivity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_qs);
         Button b7 = (Button) findViewById(R.id.button7);
         Button b8 = (Button) findViewById(R.id.button8);
 

@@ -42,9 +42,8 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android id="@+id/radioButton6"
+        android:id="@+id/radioButton6"
         android:background="@drawable/apple"
-        android:id="@+id/radioButton7"
         android:layout_alignStart="@+id/radioButton5"
         android:layout_centerInParent="true"
         android:layout_marginTop="36dp" />

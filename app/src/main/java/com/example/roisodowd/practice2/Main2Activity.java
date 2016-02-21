@@ -10,7 +10,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         Button b3 = (Button) findViewById(R.id.button3);
         Button b4 = (Button) findViewById(R.id.button4);
         Button b9 = (Button) findViewById(R.id.button9);
