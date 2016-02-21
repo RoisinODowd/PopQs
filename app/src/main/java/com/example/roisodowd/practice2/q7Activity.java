@@ -13,61 +13,52 @@ public class q7Activity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q2);
+        setContentView(R.layout.activity_q7);
 
-        RadioButton r8 = (RadioButton) findViewById(R.id.radioButton8);
-        RadioButton r9 = (RadioButton) findViewById(R.id.radioButton9);
-        RadioButton r10 = (RadioButton) findViewById(R.id.radioButton10);
+        RadioButton r23 = (RadioButton) findViewById(R.id.radioButton23);
+        RadioButton r24 = (RadioButton) findViewById(R.id.radioButton24);
+        RadioButton r25 = (RadioButton) findViewById(R.id.radioButton25);
 
-        r8.setOnClickListener(new View.OnClickListener() {
+        r23.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView26);
                 textViewA.setVisibility(View.VISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView27);
                 textViewB.setVisibility(View.INVISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView34);
                 textViewC.setVisibility(View.INVISIBLE);
             }
         });
 
-        r9.setOnClickListener(new View.OnClickListener() {
+        r24.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView26);
                 textViewA.setVisibility(View.INVISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView27);
                 textViewB.setVisibility(View.VISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView34);
                 textViewC.setVisibility(View.INVISIBLE);
             }
         });
 
-        r10.setOnClickListener(new View.OnClickListener() {
+        r25.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView26);
                 textViewA.setVisibility(View.INVISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView27);
                 textViewB.setVisibility(View.INVISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView34);
                 textViewC.setVisibility(View.VISIBLE);
             }
         });
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q7);
-
-
-
-        Button b22 = (Button) findViewById(R.id.button14);
-        Button b23 = (Button) findViewById(R.id.button15);
+        Button b22 = (Button) findViewById(R.id.button22);
+        Button b23 = (Button) findViewById(R.id.button23);
 
         b22.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -83,5 +74,13 @@ public class q7Activity extends AppCompatActivity {
                 startActivity(myintent2);
             }
         });
+    }
+
+
+    protected void onCreate2(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_q7);
+
+
     }
 }

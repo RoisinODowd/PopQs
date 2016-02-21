@@ -13,58 +13,50 @@ public class q5Activity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q2);
+        setContentView(R.layout.activity_q5);
 
-        RadioButton r8 = (RadioButton) findViewById(R.id.radioButton8);
-        RadioButton r9 = (RadioButton) findViewById(R.id.radioButton9);
-        RadioButton r10 = (RadioButton) findViewById(R.id.radioButton10);
+        RadioButton r17 = (RadioButton) findViewById(R.id.radioButton17);
+        RadioButton r18 = (RadioButton) findViewById(R.id.radioButton18);
+        RadioButton r19 = (RadioButton) findViewById(R.id.radioButton19);
 
-        r8.setOnClickListener(new View.OnClickListener() {
+        r17.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView30);
                 textViewA.setVisibility(View.VISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView31);
                 textViewB.setVisibility(View.INVISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView32);
                 textViewC.setVisibility(View.INVISIBLE);
             }
         });
 
-        r9.setOnClickListener(new View.OnClickListener() {
+        r18.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView30);
                 textViewA.setVisibility(View.INVISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView31);
                 textViewB.setVisibility(View.VISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView32);
                 textViewC.setVisibility(View.INVISIBLE);
             }
         });
 
-        r10.setOnClickListener(new View.OnClickListener() {
+        r19.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView textViewA = (TextView) findViewById(R.id.textView17);
+                TextView textViewA = (TextView) findViewById(R.id.textView30);
                 textViewA.setVisibility(View.INVISIBLE);
 
-                TextView textViewB = (TextView) findViewById(R.id.textView18);
+                TextView textViewB = (TextView) findViewById(R.id.textView31);
                 textViewB.setVisibility(View.INVISIBLE);
 
-                TextView textViewC = (TextView) findViewById(R.id.textView19);
+                TextView textViewC = (TextView) findViewById(R.id.textView32);
                 textViewC.setVisibility(View.VISIBLE);
             }
         });
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q5);
-
-
         Button b18 = (Button) findViewById(R.id.button18);
         Button b19 = (Button) findViewById(R.id.button19);
         b18.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +73,15 @@ public class q5Activity extends AppCompatActivity {
                 startActivity(myintent2);
             }
         });
+    }
+
+
+    protected void onCreate2(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_q5);
+
+
+
     }
 }
 

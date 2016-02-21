@@ -58,22 +58,14 @@ public class q2Activity extends AppCompatActivity {
                 textViewC.setVisibility(View.VISIBLE);
             }
         });
-    }
-
-
-
-    public void onCreate2 (Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q2);
-
         Button b12 = (Button) findViewById(R.id.button12);
         Button b13 = (Button) findViewById(R.id.button13);
-         b12.setOnClickListener(new View.OnClickListener() {
-             public void onClick(View v) {
-                 Intent myintent1 = new Intent(q2Activity.this, Main2Activity.class);
-                 startActivity(myintent1);
-             }
-         });
+        b12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent myintent1 = new Intent(q2Activity.this, q1Activity.class);
+                startActivity(myintent1);
+            }
+        });
 
         b13.setOnClickListener(new View.OnClickListener() {
 
@@ -82,5 +74,14 @@ public class q2Activity extends AppCompatActivity {
                 startActivity(myintent2);
             }
         });
+    }
+
+
+
+    public void onCreate2 (Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_q2);
+
+
     }
 }

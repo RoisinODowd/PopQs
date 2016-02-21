@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.roisodowd.practice2.Main2Activity"
+    tools:context=".q1Activity"
     android:id="@+id/Q1">
 
     <TextView
@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radioButton4"
-        android:background="@drawable/lemon"
         android:layout_below="@+id/radioButton5"
         android:layout_alignStart="@+id/radioButton5"
         android:layout_marginTop="36dp" />
@@ -34,19 +33,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/radioButton5"
         android:checked="false"
-        android:background="@drawable/watermelon"
         android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/radioButton6"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="31dp"
+        android:elegantTextHeight="false"
+        android:layout_alignEnd="@+id/radioButton6" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radioButton6"
-        android:background="@drawable/apple"
-        android:layout_above="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -89,7 +87,8 @@
         android:text="Try again!"
         android:id="@+id/textView20"
         android:layout_below="@+id/radioButton5"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,7 +97,8 @@
         android:text="Try again!"
         android:id="@+id/textView21"
         android:layout_below="@+id/radioButton4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,6 +107,35 @@
         android:text="You got it!"
         android:id="@+id/textView28"
         android:layout_below="@+id/radioButton6"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_toEndOf="@+id/radioButton5"
+        android:layout_alignTop="@+id/radioButton5"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_toEndOf="@+id/radioButton4"
+        android:layout_alignTop="@+id/radioButton4"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/radioButton6"
+        android:layout_alignTop="@+id/radioButton6"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="20dp" />
 
 </RelativeLayout>
