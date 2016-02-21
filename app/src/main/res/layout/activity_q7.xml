@@ -109,4 +109,12 @@
         android:layout_below="@+id/radioButton25"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView46"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

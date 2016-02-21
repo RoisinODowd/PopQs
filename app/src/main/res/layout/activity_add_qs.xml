@@ -63,4 +63,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="88dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView39"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/editText3" />
+
 </RelativeLayout>

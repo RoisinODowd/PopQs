@@ -76,4 +76,12 @@
         android:layout_alignStart="@+id/radioButton2"
         android:textSize="20dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView38"
+        android:background="@mipmap/ic_launcher"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

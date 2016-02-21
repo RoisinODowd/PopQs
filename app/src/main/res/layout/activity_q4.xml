@@ -118,4 +118,12 @@
         android:layout_above="@+id/textView37"
         android:layout_toEndOf="@+id/radioButton16" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView43"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
